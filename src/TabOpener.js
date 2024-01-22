@@ -8,8 +8,13 @@ const TabOpener = () => {
       if (currentTab <= 30) {
         const dynamicUrl = `https://www.bing.com/search?q=${currentTab}&cvid=unique_cvid_here&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPNIBBz${currentTab}MWowaj${currentTab}oAgCwAgA&FORM=ANAB01&ucpdpc=UCPD&PC=LCTS`;
 
-        window.open(dynamicUrl, "_blank");
+        const newTab = window.open(dynamicUrl, "_blank");
         setCurrentTab((prevTab) => prevTab + 1);
+
+        // Close the tab after 10 seconds (adjust as needed)
+        setTimeout(() => {
+          newTab.close();
+        }, 10000);
       } else {
         clearInterval(intervalId); // Stop the interval when 30 tabs are opened
       }
