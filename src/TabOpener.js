@@ -13,15 +13,26 @@ const TabOpener = () => {
       } else {
         clearInterval(intervalId); // Stop the interval when 30 tabs are opened
       }
-    }, 8000); // Set the interval to 4 seconds
+    }, 8000); // Set the interval to 8 seconds
 
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, [currentTab]);
 
+  // Styles for body
+  document.body.style.backgroundColor = "#333"; // Background color
+  document.body.style.transition = "background-color 1s ease-in-out"; // Transition effect
+
   return (
-    <div>
-      {/* No need for a button since the tabs open automatically */}
-      {/* <button onClick={openNextTab}>Open Tabs</button> */}
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1 style={{ fontSize: "2em", color: "#f0f0f0" }}>
+        Boss, please wait for 4 minutes.
+      </h1>
+      <h1 style={{ fontSize: "2em", color: "#f0f0f0" }}>
+        It will open a new tab every 8 seconds until 30 tabs are opened.
+      </h1>
+      <h2 style={{ fontSize: "1.5em", fontStyle: "cursive", color: "#f01fff" }}>
+        Love, Reyd &#10084;
+      </h2>
     </div>
   );
 };
