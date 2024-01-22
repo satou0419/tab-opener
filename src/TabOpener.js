@@ -14,7 +14,7 @@ const TabOpener = () => {
         // Close the tab after 10 seconds (adjust as needed)
         setTimeout(() => {
           newTab.close();
-        }, 10000);
+        }, 8000);
       } else {
         clearInterval(intervalId); // Stop the interval when 30 tabs are opened
       }
