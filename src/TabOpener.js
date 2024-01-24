@@ -75,16 +75,16 @@ const TabOpener = () => {
     display: "flex",
     justifyContent: "center",
     flexWrap: "wrap",
-    gap: "10px",
+    gap: "20px",
     color: "#333", // Text color
   };
 
   const featureCardStyle = {
-    flex: "0 0 calc(30% - 20px)",
+    flex: "0 0 calc(30% - 40px)",
     backgroundColor: "#f0f0f0", // Background color of the box
-    padding: "15px",
+    padding: "20px",
     borderRadius: "10px",
-    marginBottom: "5px",
+    marginBottom: "20px",
   };
 
   return (
@@ -94,11 +94,6 @@ const TabOpener = () => {
       </h1>
       <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
         Dear Tab Opener Community,
-      </p>
-
-      <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
-        We are thrilled to announce the release of Patch v3, introducing
-        exciting changes to enhance your experience. Here's what's new:
       </p>
       <div style={featureContainerStyle}>
         <div style={featureCardStyle}>
@@ -174,15 +169,22 @@ const TabOpener = () => {
           </h2>
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(5, 1fr)",
+              display: "flex",
               gap: "10px",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
             {fetchedWords.map((word, index) => (
               <div
                 key={index}
-                style={{ fontSize: "1.2em", marginBottom: "10px" }}
+                style={{
+                  fontSize: "1.2em",
+                  marginBottom: "10px",
+                  backgroundColor: "#f0f0f0",
+                  padding: "10px",
+                  borderRadius: "10px",
+                }}
               >
                 {word}
               </div>
@@ -190,6 +192,42 @@ const TabOpener = () => {
           </div>
         </div>
       )}
+
+      <div style={{ marginTop: "20px" }}>
+        <p style={{ fontSize: "1.2em", marginBottom: "10px" }}>
+          Want to give support? Send it here:
+        </p>
+        <a
+          href="https://paypal.me/ReyDanteG"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontSize: "1.2em",
+            color: "#4CAF50", // Link color
+            textDecoration: "underline",
+          }}
+        >
+          paypal.me/ReyDanteG
+        </a>
+      </div>
+
+      <div style={{ marginTop: "20px" }}>
+        <p style={{ fontSize: "1.2em", marginBottom: "10px" }}>
+          You can reach me on:
+        </p>
+        <a
+          href="https://web.facebook.com/profile.php?id=100074602249965"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontSize: "1.2em",
+            color: "#4CAF50", // Link color
+            textDecoration: "underline",
+          }}
+        >
+          https://web.facebook.com/profile.php?id=100074602249965
+        </a>
+      </div>
     </div>
   );
 };
