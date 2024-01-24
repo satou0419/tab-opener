@@ -96,8 +96,8 @@ const TabOpener = () => {
         Dear Tab Opener Community,
       </p>
       <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
-        We are thrilled to announce the release of Patch v3, introducing
-        exciting changes to enhance your experience. Here's what's new:
+        I am thrilled to announce the release of Patch v3, introducing exciting
+        changes to enhance your experience. Here's what's new:
       </p>
       <div style={featureContainerStyle}>
         <div style={featureCardStyle}>
@@ -138,7 +138,7 @@ const TabOpener = () => {
         </div>
       </div>
       <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
-        We believe these updates will make your Tab Opener experience smoother
+        I believe these updates will make your Tab Opener experience smoother
         and more enjoyable. Thank you for your continued support and feedback!
       </p>
 
