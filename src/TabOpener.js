@@ -95,6 +95,10 @@ const TabOpener = () => {
       <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
         Dear Tab Opener Community,
       </p>
+      <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
+        We are thrilled to announce the release of Patch v3, introducing
+        exciting changes to enhance your experience. Here's what's new:
+      </p>
       <div style={featureContainerStyle}>
         <div style={featureCardStyle}>
           <p style={{ fontSize: "1.2em", marginBottom: "10px" }}>
