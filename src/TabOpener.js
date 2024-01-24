@@ -173,22 +173,15 @@ const TabOpener = () => {
           </h2>
           <div
             style={{
-              display: "flex",
+              display: "grid",
+              gridTemplateColumns: "repeat(5, 1fr)",
               gap: "10px",
-              flexWrap: "wrap",
-              justifyContent: "center",
             }}
           >
             {fetchedWords.map((word, index) => (
               <div
                 key={index}
-                style={{
-                  fontSize: "1.2em",
-                  marginBottom: "10px",
-                  backgroundColor: "#f0f0f0",
-                  padding: "10px",
-                  borderRadius: "10px",
-                }}
+                style={{ fontSize: "1.2em", marginBottom: "10px" }}
               >
                 {word}
               </div>
