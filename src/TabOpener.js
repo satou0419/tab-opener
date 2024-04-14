@@ -92,6 +92,22 @@ const TabOpener = () => {
       <h1 style={{ fontSize: "2em", marginBottom: "20px" }}>
         🚀 Exciting News: Patch v3 Unveiled! 🚀
       </h1>
+      <button
+        style={{
+          fontSize: "1.5em",
+          padding: "10px 20px",
+          backgroundColor: "#4CAF50",
+          color: "white",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+        onClick={startTabOpening}
+        disabled={isButtonDisabled}
+      >
+        {isButtonDisabled ? "Tab Opening..." : "Get Started"}
+      </button>
+
       <p style={{ fontSize: "1.2em", marginBottom: "20px" }}>
         Dear Tab Opener Community,
       </p>
@@ -149,22 +165,6 @@ const TabOpener = () => {
         <br />
         Reyd
       </p>
-
-      <button
-        style={{
-          fontSize: "1.5em",
-          padding: "10px 20px",
-          backgroundColor: "#4CAF50",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-        onClick={startTabOpening}
-        disabled={isButtonDisabled}
-      >
-        {isButtonDisabled ? "Tab Opening..." : "Get Started"}
-      </button>
 
       {fetchedWords.length > 0 && (
         <div style={{ marginTop: "20px" }}>
